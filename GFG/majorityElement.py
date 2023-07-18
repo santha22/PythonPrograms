@@ -14,5 +14,17 @@ class Solution:
             if dict[i] > N//2:
                 return i
         return -1
+
+def main():
+    T = int(input())
+    while(T > 0):
+        N = int(input())
+        A = [int(x) for x in input().strip().split()]
+        obj = Solution()
+        print(obj.majorityElement(A,N))
+        T -= 1
+
+if __name__ == "__main__":
+    main()
             
         
