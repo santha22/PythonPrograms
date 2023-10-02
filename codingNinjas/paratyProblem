@@ -1,0 +1,10 @@
+from typing import List
+
+def parityProblems(arr: List[int]) -> int:
+    # Write your code here.
+    total = sum(arr)
+    if total % 2 == 0:
+        return len(arr)
+
+    else:
+        return len(arr) - 1
