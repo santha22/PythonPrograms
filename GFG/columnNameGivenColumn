@@ -1,0 +1,16 @@
+result = ""
+        
+    while n > 0:
+        
+        remainder = (n - 1) % 26
+        
+      
+        char = chr(ord('A') + remainder)
+        
+      
+        result = char + result
+        
+       
+        n = (n - 1) // 26
+        
+  return result
