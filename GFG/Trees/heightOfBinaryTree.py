@@ -5,7 +5,7 @@ class Solution:
         if root is None:
             return 0
             
-        left = 1 + self.height(root.left)
-        right = 1+ self.height(root.right)
+        left = self.height(root.left)
+        right = self.height(root.right)
         
-        return max(left, right)
+        return max(left, right) + 1
