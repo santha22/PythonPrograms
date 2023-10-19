@@ -25,3 +25,18 @@ class Solution:
                     level[neighbor] = level[current] + 1
                     
         return -1
+
+if __name__ == "__main__":
+            t = int(input())
+            for i in range(t):
+                V, E = list(map(int, input().split()))
+                adj = [[] for i in range(V)]
+                for i in range(E):
+                    a, b = list(map(int, input().split()))
+                    adj[a] = append(b)
+                    adj[b] = append(a)
+                    
+                X = int(input())
+                ob = Solution()
+                print(ob.nodeLevel(V, adj, X))
+
