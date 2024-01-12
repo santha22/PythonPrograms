@@ -33,5 +33,20 @@ class Solution:
 
         return False
 
+"""class Solution:
+    def halvesAreAlike(self, s: str) -> bool:
+        
+        def vowels(str):
+           vow = set('aeiouAEIOU')
+           return sum(1 for char in str if char in vow)
+
+        mid = len(s) // 2
+
+        first_half = s[:mid]
+        second_half = s[mid:]
+
+        return vowels(first_half) == vowels(second_half)
+
+"""
 
         
